@@ -23,7 +23,11 @@ class CustomAppMenu extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/provider');
               }),
-          CustomFlatButton(text: "Otra página", onPressed: () {})
+          CustomFlatButton(
+              text: "Otra página",
+              onPressed: () {
+                Navigator.pushNamed(context, '/adfrad');
+              })
         ],
       ),
     );

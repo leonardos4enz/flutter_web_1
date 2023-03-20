@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_1/router.dart/router_generator.dart';
 import 'package:flutter_web_1/ui/pages/counter_page.dart';
 import 'package:flutter_web_1/ui/pages/counter_provider_page.dart';
 
@@ -9,14 +10,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Leonardo Sáenz',
       initialRoute: "/stateful",
-      routes: {
-        '/stateful': (_) => const CounterPage(),
-        '/provider': (_) => const CounterProviderPage(),
-        '/aaa': (_) => const CounterPage()
-      },
+      // routes: {
+      //   '/stateful': (_) => const CounterPage(),
+      //   '/provider': (_) => const CounterProviderPage(),
+      //   '/aaa': (_) => const CounterPage()
+      // },
+      onGenerateRoute: RouterGenerator.generateRoute,
     );
   }
 }
