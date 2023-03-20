@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomFlatButton extends StatelessWidget {
-  const CustomFlatButton({super.key, required this.text, this.color = Colors.red, required this.onPressed});
+  const CustomFlatButton({super.key, required this.text, this.color = Colors.transparent, required this.onPressed});
 
   final String text;
   final Color color;

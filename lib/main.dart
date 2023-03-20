@@ -11,7 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Leonardo Sáenz',
       initialRoute: "/stateful",
-      routes: {'/stateful': (_) => const CounterPage()},
+      routes: {
+        '/stateful': (_) => const CounterPage(),
+        '/provider': (_) => const CounterPage(),
+        '/aaa': (_) => const CounterPage()
+      },
     );
   }
 }
