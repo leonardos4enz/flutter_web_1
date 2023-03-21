@@ -27,7 +27,7 @@ class RouteGenerator {
     return PageRouteBuilder(
       settings: RouteSettings(name: routeName),
       pageBuilder: (context, animation, secondaryAnimation) => child,
-      transitionDuration: Duration(milliseconds: 100),
+      transitionDuration: const Duration(milliseconds: 100),
       transitionsBuilder: (context, animation, secondaryAnimation, child) => (kIsWeb)
           ? FadeTransition(
               opacity: animation,
