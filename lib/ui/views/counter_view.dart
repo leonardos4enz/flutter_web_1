@@ -17,8 +17,6 @@ class _CounterViewState extends State<CounterView> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CustomAppMenu(),
-        Spacer(),
         Text("Contador Stateful"),
         FittedBox(
           fit: BoxFit.contain,
@@ -50,7 +48,6 @@ class _CounterViewState extends State<CounterView> {
                 }),
           ],
         ),
-        Spacer(),
       ],
     );
   }

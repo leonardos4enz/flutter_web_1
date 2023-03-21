@@ -25,8 +25,6 @@ class _CounterProviderPageBody extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CustomAppMenu(),
-        Spacer(),
         Text("Contador Provider"),
         FittedBox(
           fit: BoxFit.contain,
@@ -54,7 +52,6 @@ class _CounterProviderPageBody extends StatelessWidget {
                 }),
           ],
         ),
-        Spacer(),
       ],
     );
   }

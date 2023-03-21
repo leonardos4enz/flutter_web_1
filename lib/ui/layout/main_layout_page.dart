@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_1/ui/shared/custom_app_menu.dart';
 
-class MainLayoutPage extends StatefulWidget {
-  const MainLayoutPage({super.key});
+class MainLayoutPage extends StatelessWidget {
+  final Widget child;
 
-  @override
-  State<MainLayoutPage> createState() => _MainLayoutPageState();
-}
+  const MainLayoutPage({required this.child, super.key});
 
-class _MainLayoutPageState extends State<MainLayoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +15,7 @@ class _MainLayoutPageState extends State<MainLayoutPage> {
             CustomAppMenu(),
             Spacer(),
             // TODO: View
+            Expanded(child: child),
             Spacer(),
           ],
         ),
